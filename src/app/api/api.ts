@@ -54,7 +54,7 @@ async function createNote(uid: string | null, title: string | null, description:
             data: {uid, title, description}
         });
     }catch(err: any) {
-        if(err) throw new Error("Hubo un error al intentar crear una nueva nota.")
+        if(err) throw new Error("Hubo un error al intentar crear una nueva nota!.")
     }
 }
 
