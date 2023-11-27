@@ -53,7 +53,6 @@ async function createNote(uid: string | null, title: string | null, description:
             url: "/note/new",
             data: {uid, title, description}
         });
-        console.log("Se creó la nota!")
     }catch(err: any) {
         if(err) throw new Error("Hubo un error al intentar crear una nueva nota!")
     }
